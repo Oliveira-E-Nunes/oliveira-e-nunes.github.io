@@ -1,4 +1,4 @@
-
+document.getElementsByName("whatsapp-button").forEach(item => item.onclick = function() { fbq('track', 'Purchase'); });
 function showFaq() {
   jQuery('.aside-faq-question-container').click(function(){
     var toggle = jQuery(this).children('div#descwrapper');
@@ -10,7 +10,6 @@ function showFaq() {
 		jQuery(this).toggleClass('inactive active');
 	});
 }
-
 
 function debounce(func, timeout = 300){
   let timer;
